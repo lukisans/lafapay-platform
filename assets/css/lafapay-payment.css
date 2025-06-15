@@ -1,0 +1,133 @@
+/* Lafapay: Checkout Payment Section Styling */
+
+.woocommerce-checkout-payment {
+    background: #ffffff !important;
+    border: none;
+    margin-top: 2rem;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Payment method list */
+.woocommerce-checkout-payment .wc_payment_methods {
+    list-style: none;
+    padding: 0 !important;
+    margin: 0;
+}
+
+/* Lafapay payment method item */
+.woocommerce-checkout-payment .payment_method_lafapay {
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.woocommerce-checkout-payment .payment_method_lafapay:hover {
+    background-color: #f3f4f6;
+}
+
+.woocommerce-checkout-payment .payment_method_lafapay label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Payment details box */
+.payment_method_lafapay .payment_box {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dropdown & input */
+#lafapay-payment-form select,
+#lafapay-payment-form input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+}
+
+#lafapay-payment-form label {
+    font-weight: 500;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* Payment Info Box */
+#lafapay-payment-info {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+}
+
+/* Amount & recipient */
+#lafapay-amount,
+#lafapay-recipient {
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+/* Place order section */
+.place-order {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.place-order button[type="submit"] {
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.place-order button[type="submit"]:hover {
+    background-color: #1e40af;
+}
+
+/* Terms & privacy */
+.woocommerce-terms-and-conditions-wrapper {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-top: 1rem;
+}
+
+.woocommerce-privacy-policy-link {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.woocommerce-privacy-policy-link:hover {
+    color: #1e40af;
+}
+
+.woocommerce-checkout-payment .payment_box::before {
+    display: none !important;
+}
